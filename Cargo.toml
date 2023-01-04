@@ -1,0 +1,42 @@
+[package]
+name = "lsat-proxy"
+version = "0.0.1"
+edition = "2021"
+default-run="server"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+warp = "0.3"
+lightning = "0.0.113"
+anyhow = { version = "1.0.65", features = ["backtrace"] }
+hex = "0.4.3"
+macaroon = "0.3.0"
+regex = "1.7.0"
+base64 = "0.13.1"
+# tonic_lnd = { path = "../tonic_lnd" }
+tonic_lnd = "0.5.0"
+rand = "0.8.5"
+# sha2 = "0.10.6"
+bitcoin_hashes = "0.11.0"
+# bitcoin = "0.29.2"
+stretto = { version = "0.7.1", features = ["async"] }
+lazy_static = "1.4.0"
+bincode = "1.3.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.91"
+rmp-serde = "1.1.0"
+itertools = "0.10.5"
+hyper-tls = "0.5.0"
+lightning-invoice = "0.21.0"
+config = "0.13.3"
+tracing = "0.1"
+sled = "0.34.7"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+askama = "0.11.1"
+
+# cli deps
+clap = { version = "4.0.4", features = ["derive"] }
+ansi_term = "0.12.1"
+cli-table = "0.4.7"
