@@ -94,13 +94,13 @@ backends: # list of backends to forward traffic to
 ```
 
 ## Roadmap
-- [~] lsat not found custom error 
+- [x] lsat not found custom error 
 - [x] error handling improvements
 - [x] code cleanup
 - [x] use streaming for getting LND invoice states instead of polling calls
 - [x] secret store in some db/embedded? sqllite?
 - [x] add to macaroon: path, price?
-
+- [ ] graceful handling of CaveatNotSatisfied
 - [ ] proper errror handling (and x-reason for payment failure, example: QuotaFailure (as per https://lsat.tech/protocol-specification) when out of quota etc)
 - [ ] config parsing (mutually exclusive configs)
 - [ ] x-reason to when payment required (quota exhaused, no inv associated, wrong path etc)
@@ -139,8 +139,8 @@ Project Link: [https://github.com/bernii/lsat-proxy-rs](https://github.com/berni
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/bernii/lsat-proxy-rs.svg?style=for-the-badge
 [contributors-url]: https://github.com/bernii/lsat-proxy-rs/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/bernii/lsat-proxy.svg?style=for-the-badge
-[forks-url]: https://github.com/bernii/lsat-proxy/network/members
+[forks-shield]: https://img.shields.io/github/forks/bernii/lsat-proxy-rs.svg?style=for-the-badge
+[forks-url]: https://github.com/bernii/lsat-proxy-rs/network/members
 [stars-shield]: https://img.shields.io/github/stars/bernii/lsat-proxy-rs.svg?style=for-the-badge
 [stars-url]: https://github.com/bernii/lsat-proxy-rs/stargazers
 [issues-shield]: https://img.shields.io/github/issues/bernii/lsat-proxy-rs.svg?style=for-the-badge
